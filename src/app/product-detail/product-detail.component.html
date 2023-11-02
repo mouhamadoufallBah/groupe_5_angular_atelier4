@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="currentProduct.imageUrl" class="img-fluid" alt="Image du produit">
+    </div>
+    <div class="col-md-6">
+      <h2> {{ currentProduct.nom }}</h2>
+      <p>{{ currentProduct.description }}</p>
+      <p>Prix : {{ currentProduct.prix }} f cfa</p>
+      <button class="btn btncart">Ajouter au Panier</button>
+    </div>
+  </div>
+</div>

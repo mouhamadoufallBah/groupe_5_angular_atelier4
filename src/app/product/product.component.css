@@ -1,0 +1,26 @@
+.cardContent { display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  justify-content: center;
+}
+
+.card img {
+  height: 180px;
+  transition: transform 0.3s;
+}
+.card img:hover {
+  transform: scale(0.9);
+}
+@media (max-width: 1023px) {
+  .cardContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContent {
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+}
